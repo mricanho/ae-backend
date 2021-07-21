@@ -55,6 +55,6 @@ class Appointment < ApplicationRecord
   def after_two_months?
     return unless !start_time.nil? && start_time > DateTime.now + 2.months
 
-    errors.add(:error, "Two months is the limit, please choose a sooner date")
+    errors.add(:error, 'Two months is the limit, please choose a sooner date')
   end
 end

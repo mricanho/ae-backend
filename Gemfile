@@ -30,19 +30,19 @@ gem 'bcrypt'
 gem 'bootsnap', '>= 1.4.4', require: false
 gem 'database_cleaner'
 gem 'dotenv-rails', groups: %i[development test]
+gem 'faker', git: 'https://github.com/faker-ruby/faker.git', branch: 'master'
 gem 'jwt'
 gem 'rack-cors'
 gem 'rainbow'
-gem 'faker', git: 'https://github.com/faker-ruby/faker.git', branch: 'master'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
+  gem 'factory_bot_rails', '~> 6.1'
   gem 'hirb', '~> 0.7.3'
   gem 'rspec-rails'
   gem 'rubocop', '>= 1.0', '< 2.0'
   gem 'shoulda-matchers', '~> 4.5', '>= 4.5.1'
-  gem 'factory_bot_rails', '~> 6.1'
 end
 
 group :development do
