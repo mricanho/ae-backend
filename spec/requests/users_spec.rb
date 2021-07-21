@@ -9,6 +9,17 @@ describe 'POST /register - registration success', type: :request do
       password_confirmation: '123456'
     }
   end
+
+  it 'creates a new user and logs it in' do
+    post '/api/v1/register', params: new_user
+    parsed_body = JSON.parse(response.body)
+    expect(response).to have_http_status(:success)
+    expect(parsed_body.keys).to match_array(%w[loggedIn username email admin token])
+    expect(parsed_body['username']).to eq(new_user[:username])
+    expect(parsed_body['email']).to eq(new_user[:email])
+    expect(parsed_body['loggedIn']).to eq(true)
+    expect(parsed_body['admin']).to eq(false)
+  end
 end
 describe 'POST /register - registration missing password', type: :request do
   let(:without_password) do

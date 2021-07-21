@@ -4,6 +4,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :users, only: [:create], path: 'register'
       resources :users, only: [:index], path: 'users'
+      resources :authentication, only: [:create], path: 'login'
     end
   end
 end
