@@ -1,4 +1,3 @@
-require 'database_cleaner'
 require 'rainbow/refinement'
 require 'faker'
 
@@ -7,8 +6,6 @@ using Rainbow
 Gem.win_platform? ? (system "cls") : (system "clear")
 
 puts "-- Erasing DB --".red
-
-DatabaseCleaner.clean_with(:truncation)
 
 puts "--    Done    --".green
 
