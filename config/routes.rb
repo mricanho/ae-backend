@@ -5,6 +5,9 @@ Rails.application.routes.draw do
       resources :users, only: [:create], path: 'register'
       resources :users, only: [:index], path: 'users'
       resources :authentication, only: [:create], path: 'login'
+      resource :appointments, only: [:create, :destroy, :show]
+      resources :appointments, only: [:index], path: 'admin/appointments'
+      resources :lectures, only: [:index]
     end
   end
 end
