@@ -15,23 +15,23 @@ puts "--    Done    --".green
 puts "\nSeeding...".yellow
 
 Lecture.create(
-  name: "Personnal class (1 hour)"
+  name: "Personal Class (1 hour)"
 )
 
 Lecture.create(
-  name: "Personnal class (1 hour)"
+  name: "Advanced Business English (1 hour)"
 )
 
 Lecture.create(
-  name: "Group class (1 hour)"
+  name: "Group Class (1 hour)"
 )
 
 Lecture.create(
-  name: "Intense class (2 hour)"
+  name: "Personal Intensive Class (2 hours)"
 )
 
 Lecture.create(
-  name: "Intense group class (2 hour)"
+  name: "Group Intensive Class (2 hours)"
 )
 
 User.create(
