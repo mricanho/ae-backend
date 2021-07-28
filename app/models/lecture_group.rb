@@ -1,0 +1,2 @@
+class LectureGroup < ApplicationRecord
+end
