@@ -1,6 +1,6 @@
 class AuthenticationTokenService
   HMAC_SECRET = if Rails.env.production?
-                  ENV['JWT_SECRET']
+                  'POTATO'
                 else
                   'POTATO'
                 end
