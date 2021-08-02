@@ -1,3 +1,4 @@
+# rubocop:disable Style/IdenticalConditionalBranches, Lint/DuplicateBranch
 class AuthenticationTokenService
   HMAC_SECRET = if Rails.env.production?
                   'POTATO'
@@ -31,3 +32,4 @@ class AuthenticationTokenService
     { error: 'Expired Session or Decoding Error. Please log-in again.' }
   end
 end
+# rubocop:enable Style/IdenticalConditionalBranches, Lint/DuplicateBranch
