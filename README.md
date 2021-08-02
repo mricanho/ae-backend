@@ -3,6 +3,8 @@
 Agile English it's an app in which you can schedule an appointment with your online English teacher, everything is easy and accessible. This repository is the API created in Ruby on Rails that fulfills the front-end React app. 
 
 PostgreSQL is used for the database and it's deployed on Heroku.
+
+You can take a look to the [Front-end Repository here](https://github.com/mricanho/agile-english/tree/feature)
 ## Deployed API
 
 <a href="https://agile-english-api.herokuapp.com/api/v1/lectures">Check the API data here</a>
@@ -21,7 +23,7 @@ This API it's open for anyone, this means that you don't need an API key to acce
 
 The Entity Relationship Diagram used in the database:
 
-IMAGE
+![image](./screenshot.jpg)
 
 **Allowed HTTPS requests:**
 
