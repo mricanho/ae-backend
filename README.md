@@ -86,7 +86,7 @@ rails s
 After this you can open your favorite web-browser and copy paste the next:
 
 ```bash
-http://localhost:3000/api/v1/lectures
+http://localhost:3001/api/v1/lectures
 ```
 
 ### Tests
