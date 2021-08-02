@@ -23,7 +23,7 @@ This API it's open for anyone, this means that you don't need an API key to acce
 
 The Entity Relationship Diagram used in the database:
 
-![image](./screenshot.jpg)
+![image](./screenshot.jpeg)
 
 **Allowed HTTPS requests:**
 
